@@ -160,9 +160,9 @@ export class Certificate {
 
     let errorMessage;
     if (typeof this.privateKey !== 'string' || !this.privateKey) {
-      errorMessage = 'Certificate object must contain a string "private_key" property.';
+      errorMessage = 'Certificate object must contain a string "privateKey" property.';
     } else if (typeof this.clientEmail !== 'string' || !this.clientEmail) {
-      errorMessage = 'Certificate object must contain a string "client_email" property.';
+      errorMessage = 'Certificate object must contain a string "clientEmail" property.';
     }
 
     if (typeof errorMessage !== 'undefined') {
